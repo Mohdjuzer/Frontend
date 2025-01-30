@@ -1,0 +1,1535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar{
+    height: .1rem;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: aquamarine;
+    border-radius: 5rem;
+}
+body{
+        font-family: "Poppins", serif;
+        background: black;
+        color: #fff;
+        overflow-x: hidden;
+
+}
+header{
+    padding: 25px 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     width: 100%;
+     z-index: 1001;
+}
+.logo{
+    font-size: 2rem;
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo img{
+    width: 12rem;
+  display: inline-block;
+  margin-left: -99px;
+    
+}
+ul.navlist{
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+    margin-left: 1rem;
+     
+}
+.navlist li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    transition: all .3s ease;
+}
+.navlist li a:hover,
+.navlist li a.active{
+    box-shadow: 0 0 1rem aquamarine;
+    background: aquamarine;
+    color: black;
+}
+section{
+    min-height: 100vh;
+}
+.parallex-home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.parallex-home img{
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+.parallex-home img.star11{
+position: absolute;
+top: 49%;
+left: 33%;
+
+width: 10rem;
+
+animation: myanimation 5s alternate infinite;
+animation-delay: 2s;
+}
+
+@keyframes myanimation {
+    from{
+        top: 49%;
+left: 33%;
+width: 10rem;
+
+
+    }to{
+        top: 45%;
+        left: 25%;
+        width: 12rem;
+        
+      
+    }
+
+}
+.parallex-home img.star12{
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    width: 9%;
+    animation: myanimation1 5s alternate infinite;
+    animation-delay: 2s;
+    }
+    @keyframes myanimation1 {
+        from{
+            top: 37%;
+    left: 37%;
+    width: 9rem;
+    
+        }to{
+            top: 28%;
+            left: 30%;
+            width: 11rem;
+          
+        }
+    
+    }
+
+
+ .parallex-home img.star13{
+        position: absolute;
+        top: 23%;
+        left: 41%;
+        width: 10%;
+        animation: myanimation2 5s alternate infinite;
+        animation-delay: 2s;
+        }
+        @keyframes myanimation2 {
+            from{
+                top: 23%;
+        left: 41%;
+        width: 10rem;
+        
+            }to{
+                top: 13%;
+                left: 37%;
+                width: 12rem;
+              
+            }
+        
+        }
+    
+        
+.parallex-home img.star14{
+            position: absolute;
+            top: 22%;
+            left: 54%;
+            width: 9%;
+            animation: myanimation3 5s alternate infinite;
+        animation-delay: 2s;
+        
+            }
+            @keyframes myanimation3 {
+                from{
+                    top: 22%;
+            left: 54%;
+            width: 9rem;
+            
+                }to{
+                    top: 10%;
+                    left: 55%;
+                    width: 11rem;
+                  
+                }
+            
+            }
+.parallex-home img.star15{
+                position: absolute;
+                top: 35%;
+                left: 58%;
+                width: 8%;
+                transform: rotate(20deg);
+                animation: myanimation4 5s alternate infinite;
+        animation-delay: 2s;
+                }
+                @keyframes myanimation4 {
+                    from{
+                        top: 35%;
+                left: 58%;
+                width: 8rem;
+                
+                    }to{
+                        top: 25%;
+                        left: 62%;
+                        width: 10rem;
+                    }
+                
+                }
+
+ .parallex-home img.star16{
+                    position: absolute;
+                    top: 50%;
+                    left: 59%;
+                    width: 10%;
+                    animation: myanimation5 5s alternate infinite;
+        animation-delay: 2s;
+                    }
+                    @keyframes myanimation5 {
+                        from{
+                            top: 50%;
+                    left: 59%;
+                    width: 10rem;
+                    
+                        }to{
+                            top: 46%;
+                            left: 65%;
+                            width: 12rem;
+                          
+                        }
+                    
+                    }
+    
+
+
+
+.parallex-home #text{
+    position: absolute;
+    font-size: 2.5rem;
+    text-shadow: 0 10px 4px rgba(0,0,0,0.85);
+    top: 80%;
+    left: 3%;
+}
+.parallex-home #text1{
+    position: absolute;
+    font-size: 2.5rem;
+    text-shadow: 0 10px 4px rgba(0,0,0,0.85);
+    top: 68%;
+    left: 15%;
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    display: none;
+    color: rgb(209, 175, 1);
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px 10px; /* Add some padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    white-space: nowrap;
+    transition: all 0.3s ease; /* Smooth transition for appearance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for the text */
+}
+.parallex-home img#moon, .about img#desert-moon{
+    mix-blend-mode: screen;
+}
+.about{
+    position: relative;
+}
+.about img{
+    position: absolute;
+    z-index: 1000;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+.about img.about-waterfall{
+    position: absolute;
+    top: -95px;
+
+}
+.about .info-box{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 60%;
+    z-index: 1003;
+    height: 20%;
+    background-image: url('Clouds.png'); /* Specify the image file */
+    background-size: 100% 100%; /* Stretch image to fit width and height */
+    background-position: center; /* Ensure the image stays centered */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+
+}
+.about .info-box h2{
+    font-size: 25px; /* Larger font size */
+  font-weight: 900; /* Extra bold text */
+ left: 6%;
+  text-align: center; /* Center-align the text */
+  text-transform: capitalize; /* Stylish capitalization */
+  letter-spacing: 3px; /* Extra spacing for elegance */
+  background: linear-gradient(45deg, #faf9f9, #dd9f03); /* Modern gradient */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Make text background visible */
+  position: absolute;
+  display: inline-block;
+  transition: all 0.4s ease; 
+    text-transform: uppercase;
+    font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+ 
+  
+
+}    
+
+.about .info-box h2::before {
+    content: attr(data-text); /* Duplicate the text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Push outline behind the text */
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.7); /* White outline */
+    opacity: 0.8; /* Subtle opacity for a soft look */
+    transition: all 0.4s ease;
+  }
+  
+  /* Glow Effect */
+  .about .info-box h2::after {
+    content: attr(data-text); /* Duplicate the text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.2);
+    filter: blur(10px); /* Create a glowing effect */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  /* Hover Effects */
+  .about .info-box h2:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .about .info-box h2:hover::after {
+    opacity: 1; /* Make the glow visible */
+  }
+.about .info-box p{
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    
+}
+.btn{
+    background: black;
+    color: aqua;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+    border: 2px solid aqua;
+    font-weight: 500;
+    position: relative;
+    left: 1%;
+
+}
+.btn:hover{
+    box-shadow: 0 0 1rem aquamarine;
+    background: white;
+    color: black;
+}
+.products{
+    background: black;
+    padding: 3rem 10%;
+}
+.products h2{
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+.product-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.card img{
+     width: 150px;
+    height: 150px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 0.5rem #1797ff);
+}
+.card{
+    padding: 1rem;
+    border: 2px solid aqua;
+    text-align: center;
+    border-radius: 25px;
+    display: block;
+    transition: all .4s ease;
+    z-index: 999;
+}
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+
+}
+.card .price-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.info{
+    padding-bottom: .5rem;
+
+}
+.info p{
+    padding: .5rem 0 1.5rem 0;
+}
+.info .btn{
+    display: block;
+    width: 60%;
+    margin: auto;
+
+}
+.price-name span{
+    color: greenyellow;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#progress{
+    position: fixed;
+    z-index: 1000;
+    bottom: 60px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    color: blueviolet;
+    cursor: pointer;
+
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+}
+.inner-heading{
+    border: 0px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+.inner-heading span{
+    position: relative;
+    color: rgb(1, 198, 243);
+    animation: an1 10s ease infinite;
+    font-size: 36px; /* Larger font size */
+  font-weight: bold; /* Bold text for emphasis */
+  text-transform: uppercase; /* Capitalize for a clean look */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  text-align: center; /* Center-align the text */
+
+  text-shadow: 0 0 5px #fff, 0 0 10px #03efdb, 0 0 20px #f0d104, 
+               ;
+  font-family: 'Arial', sans-serif; /* Modern and clean font */
+  left: 10%;
+}
+
+
+@keyframes an1{
+    0%,
+    100%{
+        top: 0;  
+    }
+    20%{
+        top: 0; 
+        color: rgba(169, 255, 218, 0.997); 
+    }
+    25%{
+        top: -50px; 
+        color: rgb(108, 199, 222); 
+    }
+    45%{
+        top: -50px;  
+        color: cornsilk;
+    }
+    50%{
+        top: -100px; 
+        color: rgb(104, 143, 226); 
+    }
+    70%{
+        top: -100px;
+        color: rgba(99, 224, 246, 0.981);
+    }
+    75%{
+        top: -170px;
+        color: rgba(149, 243, 238, 0.888);  
+    }
+    95%{
+        top: -170px;
+        color: rgb(250, 246, 182);
+    }
+}
+.dd{
+    width: 57.3rem;
+    top: 23%;
+    left: 5%;
+    height: 22rem;
+}
+
+.cube{
+position: absolute;
+width: 300px;
+height: 300px;
+transform-style: preserve-3d;
+transform: rotateX(-30deg);
+animation: cubee 5s linear infinite;
+left: 5%;
+top: 332%;
+}
+@keyframes cubee{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }100%{
+        transform: rotateX(-30deg) rotateY(360deg);  
+    }
+
+}
+
+
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+   
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515, #00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transform-style: preserve-3d;
+}
+
+.cube div span h2{
+position: absolute;
+font-size: 2.5rem;
+color: white;
+transform: translateZ(50px);
+}
+.cube div span h2:nth-child(1){
+transform: translateZ(0) translateY(20px);
+color: rgba(0, 0, 0, 0.1);
+filter: blur(2px);
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px);
+}
+.top::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #0f0;
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1);
+}
+
+.cube1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: cubee 5s linear infinite;
+    left: 40%;
+    top: 332%;
+   
+    }
+    
+    @keyframes cubee{
+        0%{
+            transform: rotateX(-30deg) rotateY(0deg);
+        }100%{
+            transform: rotateX(-30deg) rotateY(360deg);  
+        }
+    
+    }
+    
+    
+    .cube1 div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+       
+    }
+    .cube1 div span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#151515, #00c8ff);
+        transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    transform-style: preserve-3d;
+    }
+    .cube1 div span h2{
+        position: absolute;
+        font-size: 2.5rem;
+        color: white;
+        transform: translateZ(50px);
+        }
+        .cube1 div span h2:nth-child(1){
+        transform: translateZ(0) translateY(20px);
+        color: rgba(0, 0, 0, 0.1);
+        filter: blur(2px);
+        }
+
+    .top1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background: #222;
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .top1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background: rgb(0, 179, 255);
+        transform: translateZ(-380px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgba(0, 213, 255, 0.2),
+        0 0 200px rgba(0, 179, 255, 0.4),
+        0 0 300px rgba(0, 179, 255, 0.6),
+        0 0 400px rgba(0, 179, 255, 0.8),
+        0 0 500px rgb(0, 179, 255);
+    }
+
+    .cube2{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: cubee 5s linear infinite;
+        left: 75%;
+        top: 332%;
+        }
+        
+        @keyframes cubee{
+            0%{
+                transform: rotateX(-30deg) rotateY(0deg);
+            }100%{
+                transform: rotateX(-30deg) rotateY(360deg);  
+            }
+        
+        }
+        
+        
+        .cube2 div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+           
+        }
+        .cube2 div span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#151515, #f21f1f);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d
+        }
+        .cube2 div span h2{
+            position: absolute;
+            font-size: 2.5rem;
+            color: white;
+            transform: translateZ(50px);
+            }
+            .cube2 div span h2:nth-child(1){
+            transform: translateZ(0) translateY(20px);
+            color: rgba(0, 0, 0, 0.1);
+            filter: blur(2px);
+            }
+
+        .top2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: #222;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .top2::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: rgb(255, 0, 0);
+            transform: translateZ(-380px);
+            filter: blur(20px);
+            box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+            0 0 200px rgba(255, 0, 0, 0.4),
+            0 0 300px rgba(255, 0, 0, 0.6),
+            0 0 400px rgba(255, 0, 0, 0.8),
+            0 0 500px rgba(255, 0, 0, 1);
+        }
+
+.review h1{
+    position: absolute;
+    top: 307%;
+    font-size: 4em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004) ;
+    line-height: 0.70em;
+    outline: none;
+    animation: tubelight 5s linear infinite;
+}
+@keyframes tubelight{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }18.1%,20.1%,30%,50%,60.1%,65%,85.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+
+
+}
+.review .img1{
+    position: absolute;
+    left: 9%;
+    top: 316%;
+    width: 10rem
+}
+.review .img2{
+    position: absolute;
+    width: 13rem;
+top: 315%;
+left: 42%;
+}
+.review .img3{
+    position: absolute;
+    width: 12rem;
+top: 318%;
+left: 78%;
+}
+/* container*/
+.container{
+    width: 1500px;
+    left: 5%;
+    top: 425%;
+    position: absolute;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+}
+.container .card .face{
+    width: 250px;
+    height: 225px;
+    transition: .4s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background-image: url('About-Images/hello.png'); /* Replace with your image path */
+    background-size: cover; /* Adjust the size (cover, contain, or specific dimensions) */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+.container .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    
+}
+.container .card .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+.container .card .face.face1 .content h3{
+    font-size: 1.5em;
+    color: #151515;
+    text-align: center;
+}
+.container .card .face.face1 .content a{
+    transition: .5s;
+}
+.container .card .face.face2{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card .face.face2 .content p,a{
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container .card .face.face2 .content a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0 ;
+    display: inline-block;
+}
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+/*2*/
+.container .card1{
+    position: relative;
+}
+.container .card1 .face{
+    width: 250px;
+    height: 225px;
+    transition: .4s;
+}
+
+.container .card1 .face.face1{
+    position: relative;
+    background-image: url('About-Images/Hi.png'); /* Replace with your image path */
+    background-size: cover; /* Adjust the size (cover, contain, or specific dimensions) */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+.container .card1:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    
+}
+.container .card1 .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.container .card1:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card1 .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+.container .card1 .face.face1 .content h3{
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.container .card1 .face.face1 .content a{
+    transition: .5s;
+}
+.container .card1 .face.face2{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+}
+.container .card1:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card1 .face.face2 .content p,a{
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container .card1 .face.face2 .content a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0 ;
+    display: inline-block;
+}
+.container .card1 .face.face2 .content a:hover{
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/*3*/
+.container .card2{
+    position: relative;
+}
+.container .card2 .face{
+    width: 250px;
+    height: 225px;
+    transition: .4s;
+}
+
+.container .card2 .face.face1{
+    position: relative;
+    background-image: url('About-Images/WHta.png'); /* Replace with your image path */
+    background-size: cover; /* Adjust the size (cover, contain, or specific dimensions) */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+.container .card2:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    
+}
+.container .card2 .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.container .card2:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card2 .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+.container .card2 .face.face1 .content h3{
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.container .card2 .face.face1 .content a{
+    transition: .5s;
+}
+.container .card2 .face.face2{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+}
+.container .card2:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card2 .face.face2 .content p,a{
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container .card2 .face.face2 .content a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0 ;
+    display: inline-block;
+}
+.container .card2 .face.face2 .content a:hover{
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+/*4*/
+.container .card3{
+    position: relative;
+}
+.container .card3 .face{
+    width: 250px;
+    height: 225px;
+    transition: .4s;
+}
+
+.container .card3 .face.face1{
+    position: relative;
+    background-image: url('About-Images/Final.png'); /* Replace with your image path */
+    background-size: cover; /* Adjust the size (cover, contain, or specific dimensions) */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+.container .card3:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    
+}
+.container .card3 .face.face1 .content{
+    opacity: 1;
+    transition: 0.5s;
+    text-align: center;
+
+}
+.container .card3:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card3 .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+.container .card3 .face.face1 .content h3{
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.container .card3 .face.face1 .content a{
+    transition: .5s;
+}
+.container .card3 .face.face2{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+}
+.container .card3:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card3 .face.face2 .content p,a{
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container .card3 .face.face2 .content a{
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0 ;
+    display: inline-block;
+}
+.container .card3 .face.face2 .content a:hover{
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+/*text*/
+.aesthetic-text {
+   position: absolute;
+   left: 13%;
+   top: 407%;
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(90deg, #6bfff0, #ffab52, #50fa7b, #8be9fd, #ff79c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(155, 105, 255, 0.8), 0 0 30px rgba(105, 238, 255, 0.6);
+    animation: glow 1.5s infinite alternate ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.aesthetic-text:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px rgba(155, 105, 255, 0.8), 0 0 30px rgba(105, 238, 255, 0.6);
+    }
+    to {
+        text-shadow: 0 0 30px rgb(105, 203, 255), 0 0 40px rgba(195, 255, 105, 0.8);
+    }
+}
+
+/*quiz*/
+.container69 {
+    position: absolute;
+    width: 100%;
+    top: 507%;
+    max-width: 1536px;
+    background: #1f2847;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #1f2847;
+    font-size: 14px;
+  }
+  .start-screen .btn1 {
+    margin-top: 50px;
+  }
+  .hide {
+    display: none;
+  }
+  .timer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .timer .progress {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 3px solid #3f4868;
+  }
+  .timer .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(to right, #ea517c, #b478f1);
+    transition: 1s linear;
+  }
+  .timer .progress .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .question-wrapper .number {
+    color: #a2aace;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .question-wrapper .number .total {
+    color: #576081;
+    font-size: 18px;
+  }
+  .question-wrapper .question {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .answer-wrapper .answer {
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    border: 3px solid #3f4868;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .answer .checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #3f4868;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  .answer .checkbox i {
+    color: #fff;
+    font-size: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .answer:hover:not(.checked) .checkbox,
+  .answer.selected .checkbox {
+    background-color: #0c80ef;
+    border-color: #0c80ef;
+  }
+  .answer.selected .checkbox i {
+    opacity: 1;
+  }
+  .answer.correct {
+      border-color: #0cef2a;
+  }
+  .answer.wrong {
+    border-color: #fc3939;
+  }
+  .question-wrapper,
+  .answer-wrapper {
+    margin-bottom: 50px;
+  }
+  .btn1 {
+    width: 100%;
+    height: 60px;
+    background: #0c80ef;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .btn1:hover {
+    background: #0a6bc5;
+  }
+  .btn1:disabled {
+    background: #576081;
+    cursor: not-allowed;
+  }
+  .btn1.next {
+    display: none;
+  }
+  
+  .end-screen .score {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .score .score-text {
+    color: #a2aace;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 120px;
+  }
+  
+  @media (max-width: 468px) {
+    .container69 {
+      min-height: 100vh;
+      max-width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  /*slider*/
+
+.slider{
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    top: 630%;
+    
+}
+.slider-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+
+    @keyframes scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-250px * 9));
+        }
+    }
+.slide{
+height: 200px;
+width: 250px;
+display: flex;
+align-items: center;
+padding: 15px;
+perspective: 100px;
+}
+.slider img{
+    width: 100%;
+    transition: transform 1s;
+}
+.slider::before,
+.slider::after{
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider img:hover{
+    transform: translateZ(20px);
+}
+
+
+.pop span{
+    left: 40%;
+    top: 20px;
+    position: relative;
+    color: white;
+    display: inline-block;
+    font-size: 5rem;
+    text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #b7b7b7, 0 3px 0 #b7b7b7, 0 4px 0 #b7b7b7, 0 5px 0 #b7b7b7,  0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,  0 10px 10px rgba(0, 0, 0.5);
+    animation: bounce 0.4s ease infinite alternate;
+ margin-top: 50px;
+}
+.pop h1 span:nth-child(2){
+    animation-delay: 0.1s;
+}
+.pop h1 span:nth-child(3){
+    animation-delay: 0.2s;
+}
+.pop h1 span:nth-child(4){
+    animation-delay: 0.3s;
+}
+.pop h1 span:nth-child(5){
+    animation-delay: 0.4s;
+}
+.pop h1 span:nth-child(6){
+    animation-delay: 0.5s;
+}
+@keyframes bounce{
+    100%{
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 60px 30px rgba(0, 0, 0, 0.3) ;
+    }
+}
+.pop h2{
+    left: 22%;
+    top: 610%;
+    position: absolute;
+    font-size: 3em;
+    color: #0be2bb;
+}
+.pop h3{
+    left: 59%;
+    top: 610%;
+    position: absolute;
+    font-size: 3em;
+    color: #0be2bb;
+}
